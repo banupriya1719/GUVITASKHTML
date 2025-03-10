@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task11.css">
+</head>
+<body>
+                      <!--INPUT TYPES-->
+                      <lable><mark><b>INPUT TYPES</b></mark></lable>
+                      <br><br>
+<!--1.buttons-->
+<lable><mark><b>1.Buttons</b></mark></lable>
+    <input class="styled" type="button" value="Add to favorites" />
+    <br><br>
+<!--2.checkbox-->
+<lable><mark><b>2.Checkboxes</b></mark></lable>
+<fieldset>
+    <legend>Choose your liked sports:</legend>
+  
+    <div>
+      <input type="checkbox" id="sports" name="sports" checked />
+      <label for="sports">kabaddi</label>
+    </div>
+  
+    <div>
+      <input type="checkbox" id="sports" name="sports" />
+      <label for="sports">cricket</label>
+    </div>
+  </fieldset><br><br>
+<!--3.colors-->
+<lable><mark><b>3.Colors</b></mark></lable>
+<p>Choose your liked colors:</p>
+
+<div>
+  <input type="color" id="head" name="head" value="#e66465" />
+  <label for="head">Head</label>
+</div>
+
+<div>
+  <input type="color" id="body" name="body" value="#f6b73c" />
+  <label for="body">Body</label>
+</div><br><br>
+<!--4.date-->
+<lable><mark><b>4.Date</b></mark></lable>
+<label for="start">Start date:</label>
+
+<input
+  type="date"
+  id="start"
+  name="trip-start"
+  value="2018-07-22"
+  min="2018-01-01"
+  max="2018-12-31" />
+  <br><br>
+<!--5.date and time -local-->
+<lable><mark><b>5.Date & Time</b></mark></lable>
+
+<label for="meeting-time">Choose a time for your appointment:</label>
+
+<input
+  type="datetime-local"
+  id="meeting-time"
+  name="meeting-time"
+  value="2018-06-12T19:30"
+  min="2018-06-07T00:00"
+  max="2018-06-14T00:00" />
+  <br><br>
+<!--6.email-->
+<lable><mark><b>6.Email</b></mark></lable>
+<label for="email">Enter your example.com email:</label>
+
+<input type="email" id="email" pattern=".+@example\.com" size="30" required />
+<br><br>
+<!--7.file-->
+<lable><mark><b>7.File</b></mark></lable>
+
+<label for="avatar">Choose a profile picture:</label>
+
+<input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+<br><br>
+<!--8.hidden-->
+<lable><mark><b>8.Hidden</b></mark></lable>
+<form>
+    <div>
+      <label for="title">Post title:</label>
+      <input type="text" id="title" name="title" value="My excellent blog post" />
+    </div>
+    <div>
+      <label for="content">Post content:</label>
+      <textarea id="content" name="content" cols="60" rows="5">
+  This is the content of my excellent blog post. I hope you enjoy it!
+      </textarea>
+    </div>
+    <div>
+      <button type="submit">Update post</button>
+    </div>
+    <input type="hidden" id="postId" name="postId" value="34657" />
+  </form>
+  <br><br>
+<!--9.image-->
+<lable><mark><b>9.IMAGE</b></mark></lable>
+<p>Sign in to your account:</p>
+<div>
+  <label for="userId">User ID</label>
+  <input type="text" id="userId" name="userId" />
+</div>
+
+<input
+  type="image"
+  id="image"
+  alt="Login"
+  src="/shared-assets/images/examples/login-button.png" />
+  <br><br>
+<!--10.month-->
+<lable><mark><b>9.Month</b></mark></lable>
+<label for="start">Start month:</label>
+
+<input type="month" id="start" name="start" min="2018-03" value="2018-05" />
+<br><br>
+<!--11.numbers-->
+<lable><mark><b>11.Numbers</b></mark></lable>
+
+<label for="tentacles">Number of tentacles (10-100):</label>
+
+<input type="number" id="tentacles" name="tentacles" min="10" max="100" />
+<br><br>
+<!--12.password-->
+<lable><mark><b>12.password</b></mark></lable>
+<div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" />
+  </div>
+  
+  <div>
+    <label for="pass">Password (8 characters minimum):</label>
+    <input type="password" id="pass" name="password" minlength="8" required />
+  </div>
+  
+  <input type="submit" value="Sign in" />
+  <br><br>
+  <!--13.radio-->
+  <lable><mark><b>13.radio</b></mark></lable>
+  <fieldset>
+    <legend>Select a department:</legend>
+  
+    <div>
+      <input type="radio" id="depart" name="depart" value="ECE" checked />
+      <label for="ECE">ELECTRONIC AND COMMUNICATION ENGG</label>
+    </div>
+  
+    <div>
+      <input type="radio" id="depart" name="depart" value="EEE" />
+      <label for="EEE">ELECTRICAL AND ELECTRONICS ENGG</label>
+    </div>
+  
+    <div>
+      <input type="radio" id="depart" name="depart" value="IT" />
+      <label for="IT">INFORMATION AND TECHNOLOGY</label>
+    </div>
+  </fieldset>
+  <br><br>
+  <!--14.range-->
+  <lable><mark><b>14.range</b></mark></lable>
+  <p>Audio settings:</p>
+
+  <div>
+    <input type="range" id="volume" name="volume" min="0" max="11" />
+    <label for="volume">Volume</label>
+  </div>
+  
+  <div>
+    <input
+      type="range"
+      id="cowbell"
+      name="cowbell"
+      min="0"
+      max="100"
+      value="90"
+      step="10" />
+    <label for="cowbell">Cowbell</label>
+  </div>
+  <br><br>
+  <!--15.reset-->
+  <lable><mark><b>15.reset</b></mark></lable>
+  <form>
+    <div class="controls">
+      <label for="id">User ID:</label>
+      <input type="text" id="id" name="id" />
+  
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit" />
+    </div>
+  </form>
+<br><br>
+<!--16.SEARCH-->
+<lable><mark><b>16.SEARCH</b></mark></lable>
+<label for="site-search">Search the site:</label>
+<input type="search" id="site-search" name="q" />
+
+<button>Search</button>
+<br><br>
+<!--17.SUBMIT-->
+<lable><mark><b>17.SUBMIT</b></mark></lable>
+<form>
+  <div>
+    <label for="example">Let's submit some text</label>
+    <input id="example" type="text" name="text" />
+  </div>
+  <div>
+    <input type="submit" value="Send" />
+  </div>
+</form>
+<br><br>
+<!--18.tel-->
+<lable><mark><b>18.TEL</b></mark></lable>
+<label for="phone">
+  Enter your phone number:<br />
+  <small>Format: 123-456-7890</small>
+</label>
+
+<input
+  type="tel"
+  id="phone"
+  name="phone"
+  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+  required />
+  <br><br>
+  <!--19.text-->
+  <lable><mark><b>19.TEXT</b></mark></lable>
+  <label for="name">Name (4 to 8 characters):</label>
+
+  <input
+    type="text"
+    id="name"
+    name="name"
+    required
+    minlength="4"
+    maxlength="8"
+    size="10" />
+<br><br>
+<!--20.time--> 
+<lable><mark><b>20.TIME</b></mark></lable>
+<label for="appointment">Choose a time for your meeting:</label>
+
+<input
+  type="time"
+  id="appointment"
+  name="appointment"
+  min="09:00"
+  max="18:00"
+  required />
+
+<small>Office hours are 9am to 6pm</small>
+<br><br>
+<!--21.url-->
+<lable><mark><b>21.URL</b></mark></lable>
+<form>
+  <label for="url">Enter an https:// URL:</label>
+  <input
+    type="url"
+    name="url"
+    id="url"
+    placeholder="https://example.com"
+    pattern="https://.*"
+    size="30"
+    required />
+</form>
+<br><br>
+<!--22.WEEK-->
+<lable><mark><b>22.WEEK</b></mark></lable>
+<label for="camp-week">Choose a week in May or June:</label>
+
+<input
+  type="week"
+  name="week"
+  id="camp-week"
+  min="2018-W18"
+  max="2018-W26"
+  required />
+<br><br>
+</body>
+</html>
